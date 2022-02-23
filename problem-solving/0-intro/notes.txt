@@ -1,0 +1,12 @@
+Algorithm = A process or set of steps to accomplish a certain task.
+
+How to improve?
+  1. devise a plan for solving problems
+  2. master common problem solving patterns
+
+Problem solving steps
+  1. understand the Problem
+  2. explore concrete examples
+  3. break it down
+  4. solve/simplify
+  5. look back and refactor

@@ -1,0 +1,9 @@
+3 -- Break It Down
+----------------------------------------------------
+
+Explicitly write out the steps you need to take! 
+  - this forces you to think about the code you'll write before
+    you write it
+  - helps you catch any lingering conceptual issues or 
+    misunderstanding before you dive in and have to 
+    worry about the details (language syntax) as well  

@@ -1,0 +1,12 @@
+2 -- Explore Concrete Examples
+----------------------------------------------------
+
+Explore Examples
+  - coming up with examples can help you understand the problem better
+  - examples also provide sanity checks that your eventual solution works how it should
+
+Steps to take
+  1. start with simple examples
+  2. progress to more complex examples
+  3. explore examples with empty inputs
+  4. explore examples with invalid inputs
