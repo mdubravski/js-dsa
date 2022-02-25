@@ -1,0 +1,13 @@
+Frequency Counters 
+  - pattern that uses objects or sets to 
+    collect values/frequencies of values.
+  - This can often avoid the need for nested loops
+    or O(n^2) operations with arrays / strings.
+
+Use Cases
+  - any time you have multiple pieces of data and you need to compare them,
+    in particular if you need to see if they consist of the same individual pieces.
+      anagram,
+      one arr equal to another arr squared,
+      tell if numbers consists of same digits,
+      
