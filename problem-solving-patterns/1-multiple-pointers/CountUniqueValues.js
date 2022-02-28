@@ -68,7 +68,7 @@ function mpCountUniqueValues(arr) {
   }
   return i+1;
 }
-                           //          i            j 
+
 console.log(fqCountUniqueValues([3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 6]));
 console.log(fqCountUniqueValues1([3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 6]));
 console.log(mpCountUniqueValues([3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 6]));
