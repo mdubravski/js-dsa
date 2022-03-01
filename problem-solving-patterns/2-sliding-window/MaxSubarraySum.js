@@ -4,6 +4,10 @@
  * elements in the array.
  */
 
+function maxSubarraySum(arr, n){
+
+}
+
 /**
  * time => O(n^2)
  * space => O(1)
@@ -16,7 +20,7 @@ function naiveMaxSubarraySum(arr, n) {
   for (let i = 0; i < arr.length - n + 1; i++) {
     let sum = 0;
     for (let j = 0; j < n; j++) {
-      sum += arr[i + j];
+      sum += arr[i+j];
     }
     if (sum > max) max = sum;
   }
@@ -29,12 +33,12 @@ function naiveMaxSubarraySum(arr, n) {
  * space => O(1)
  */
 function fastMaxSubarraySum(arr, n){
-  if(arr.length < num) return null;
+  if(arr.length < n) return null;
 
   let maxSum = 0;
   let tempSum = 0;
   
-  for(let i=0; i<num; i++){
+  for(let i=0; i<n; i++){
     maxSum += arr[i];
   }
 
