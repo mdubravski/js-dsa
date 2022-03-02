@@ -108,3 +108,4 @@ function validAnagram1(str1, str2){
 }
 
 console.log(validAnagram1('anagram','nagaram'));
+console.log(a('anagram','nagaram'));

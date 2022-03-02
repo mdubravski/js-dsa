@@ -7,23 +7,7 @@
  */
 
 function same5(arr1, arr2){
-  if (arr1.length !== arr2.length) return false;
 
-  // make fqc for arr1, arr2
-  let fq1 = {};
-  let fq2 = {};
-  for(let n of arr1){
-    fq1[n] = (fq1[n] || 0) + 1;
-  }
-  for(let n of arr2){
-    fq2[n] = (fq2[n] || 0) + 1;
-  }
-  // loop through keys in fq1
-  for(let k in fq1){
-    if (!(fq2[k**2])) return false;
-    if (fq1[k] !== fq2[k**2]) return false;
-  }
-  return true;
 }
 
 //  ----------------------------------------------------------------------------------------------- 

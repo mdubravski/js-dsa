@@ -4,6 +4,9 @@
 // and you may not use the same element twice.
 // You can return the answer in any order.
 
+
+
+
 // Input: nums = [2,7,11,15], target = 9
 // Output: [0,1]
 // Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
@@ -34,11 +37,12 @@ let twoSum1 = function(nums, target) {
   
   for(let i=0; i<nums.length;i++){
       if(target-nums[i] in obj){
-          return [obj[target-nums[i]], i]
+          return [obj[target-nums[i]], i];
       }else{
           obj[nums[i]] = i;
       }
   }
 };
+
 
 console.log(twoSum1([2,7,11,15],9));
