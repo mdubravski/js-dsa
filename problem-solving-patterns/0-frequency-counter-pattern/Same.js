@@ -7,7 +7,30 @@
  */
 
 function same5(arr1, arr2){
+  // return false if arrays length is not the same
+  // make fc's for arr1 and arr2
+  // loop key k in fc1
+    // if !fc2[k**2] return false
+    // if fc1[k] !== fc2[k] return false
+  // return true
 
+  if(arr1.length !== arr2.length) return false;
+  let fc1 = {};
+  let fc2 = {};
+
+  for(let n of arr1){
+    fc1[n] = (fc1[n] || 0 ) + 1;
+  }
+  
+  for(let n of arr2){
+    fc2[n] = (fc2[n] || 0 ) + 1;
+  }
+
+  for(let k in fc1){
+    if(!fc2[k**2]) return false;
+    if(fc1[k] !== fc2[k**2]) return false;
+  }
+  return true;
 }
 
 //  ----------------------------------------------------------------------------------------------- 

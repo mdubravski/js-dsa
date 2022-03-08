@@ -72,3 +72,5 @@ function mpCountUniqueValues(arr) {
 console.log(fqCountUniqueValues([3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 6]));
 console.log(fqCountUniqueValues1([3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 6]));
 console.log(mpCountUniqueValues([3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 6]));
+console.log(foo([3, 3, 3, 4, 4, 4, 5, 5, 5, 5, 6]));
+

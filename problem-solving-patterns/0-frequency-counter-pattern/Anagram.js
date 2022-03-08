@@ -61,7 +61,7 @@
  */
 function validAnagram(str1, str2) {
   if (str1.length !== str2.length) {
-    return false
+    return false;
   }
 
   let fq1 = {};
@@ -75,31 +75,31 @@ function validAnagram(str1, str2) {
   }
 
   for (let key in fq1) {
-    if (!(key in fq2)){
+    if (!(key in fq2)) {
       return false;
     }
-    if(fq2[key] != fq1[key]){
+    if (fq2[key] != fq1[key]) {
       return false;
     }
   }
   return true;
 }
 
-function validAnagram1(str1, str2){
-  if(str1.length !== str2.length){
+function validAnagram1(str1, str2) {
+  if (str1.length !== str2.length) {
     return false;
   }
 
   const lookup = {};
 
-  for(let c of str1){
-    lookup[c] ? lookup[c] += 1 : lookup[c] = 1; 
+  for (let c of str1) {
+    lookup[c] ? lookup[c] += 1 : lookup[c] = 1;
   }
 
-  for(let c of str2){
-    if(!lookup[c]){
+  for (let c of str2) {
+    if (!lookup[c]) {
       return false;
-    }else{
+    } else {
       lookup[c] -= 1;
     }
   }
@@ -107,5 +107,5 @@ function validAnagram1(str1, str2){
   return true;
 }
 
-console.log(validAnagram1('anagram','nagaram'));
-console.log(a('anagram','nagaram'));
+console.log(validAnagram1('anagram', 'nagaram'));
+console.log(foo('anagram', 'nagaram'));
