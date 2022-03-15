@@ -7,6 +7,11 @@
 // Input: nums = [2,7,11,15], target = 9
 // Output: [0,1]
 // Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+
+function foo(nums, target){
+
+} 
+
 /**
  * 
  * time =>O(n^2) 
@@ -43,3 +48,4 @@ let twoSum1 = function(nums, target) {
 
 
 console.log(twoSum1([2,7,11,15],9));
+console.log(foo([2,7,11,15],9));

@@ -7,9 +7,9 @@
  *      access => O(1)
  *      
  *  - Object methods
- *      Object.keys => O(N)
- *      Object.values => O(N)
- *      Object.entries => O(N)
+ *      Object.keys => O(n)
+ *      Object.values => O(n)
+ *      Object.entries => O(n)
  *      hasOwnProperty => O(1)
  */
 

@@ -4,6 +4,10 @@
  * Return an array that includes both values that sum to zero or undefined if a pair does not exist.
  * */
 
+function foo(arr) {
+
+}
+
 /**
  ----------------------------------------------------------------------------------------------- 
   time => O()
@@ -74,21 +78,21 @@ function naiveSumZero(arr) {
 
 // time => O(n)
 // space => O(1)
- function fastSumZero(arr){
-   let left = 0;
-   let right = arr.length-1;
+function fastSumZero(arr) {
+  let left = 0;
+  let right = arr.length - 1;
 
-   while(left < right){
-     let sum = arr[left] + arr[right];
-     if(sum === 0){
-       return [arr[left], arr[right]];
-     }else if(sum > 0){
-       right--;
-     }else{
-       left++;
-     }
-   }
- }
+  while (left < right) {
+    let sum = arr[left] + arr[right];
+    if (sum === 0) {
+      return [arr[left], arr[right]];
+    } else if (sum > 0) {
+      right--;
+    } else {
+      left++;
+    }
+  }
+}
 
- console.log(fastSumZero([-4,-1,1,2,3,5]));
-
+console.log(fastSumZero([-4, -1, 1, 2, 3, 5]));
+console.log(foo([-4, -1, 1, 2, 3, 5]));

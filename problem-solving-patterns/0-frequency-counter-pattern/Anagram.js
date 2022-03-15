@@ -2,6 +2,11 @@
 // An anagram is a word, phrase, or name formed by rearranging the letter of another.
 // ex. cinema => iceman
 
+let foo = (s, t) => {
+ 
+};
+
+
 //  ----------------------------------------------------------------------------------------------- 
 //  time => O(n)
 //  space => O(n)

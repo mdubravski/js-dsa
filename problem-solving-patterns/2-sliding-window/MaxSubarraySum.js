@@ -10,27 +10,14 @@
  * 
  * 
  * [2, 6, 9, 2, 1, 8, 5, 6, 3]
- * i
+ * 
  * 
  */
 
-function maxSubarraySum(arr, n) {
-  // declare maxSum tempSum
-  let maxSum = 0;
-  let tempSum=0;
-  // loop from arr[0] to n
-  for(let i=0; i<n;i++){
-    maxSum += arr[i];
-  }
-  tempSum = maxSum;
-  // loop from n to arr.length
-  for(let i=n; i<arr.length; i++){
-    tempSum =  tempSum - arr[i - n] + arr[i];
-    maxSum = Math.max(maxSum,tempSum);
-  }
+ function maxSubarraySum(arr, n) {
 
-  return maxSum;
 }
+
 
 /**
  * time => O(n^2)
@@ -75,6 +62,8 @@ function fastMaxSubarraySum(arr, n) {
 
   return maxSum;
 }
+
+
 
 console.log(naiveMaxSubarraySum([2, 6, 9, 2, 1, 8, 5, 6, 3], 3));
 console.log(fastMaxSubarraySum([2, 6, 9, 2, 1, 8, 5, 6, 3], 3));
