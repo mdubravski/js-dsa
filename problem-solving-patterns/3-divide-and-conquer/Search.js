@@ -10,7 +10,18 @@
  */
 
 let foo = (arr, val) => {
-
+  let l=0,r=arr.length-1,m;
+  while(l<=r){
+    m = Math.floor((l+r)/2);
+    if(arr[m] < val){
+      l = m + 1;
+    }else if(arr[m] > val){
+      r = m - 1;
+    }else{
+      return m;
+    }
+  }
+  return -1;
 };
 
 /**
