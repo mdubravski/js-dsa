@@ -1,0 +1,5 @@
+The Call Stack
+	- In alost all programming languages, there is a built in data structure that
+	  manages what hapens when function are invoked...its called the call stack!
+	- Implemented using a stack data structure
+	- Any time a function is invoked it is placed (pushed
