@@ -2,4 +2,8 @@ The Call Stack
 	- In alost all programming languages, there is a built in data structure that
 	  manages what hapens when function are invoked...its called the call stack!
 	- Implemented using a stack data structure
-	- Any time a function is invoked it is placed (pushed
+		- Any time a function is invoked it is placed (pushed) on the top of the 
+		 call stack.
+		- When JavaScript sees the return keyword or when the function ends, the
+		  compiler will remove (pop)
+	- When we write recursive functions, we keep pushing new functions onto the call 	   stack
