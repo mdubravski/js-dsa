@@ -1,0 +1,10 @@
+What is Recursion?
+	- A process (a function in our case) that calls itself
+	- Every iterative function can be written recursivly
+	- Examples of recursion are everywhere!
+		- JSON.parse / JSON.stringify
+		- document.getElementById and DOM traversal
+		- Object traversal
+		- Much more!
+	- We will see it w/ more complex data structres 
+	- It is sometimes a cleaner alternative to iteration
