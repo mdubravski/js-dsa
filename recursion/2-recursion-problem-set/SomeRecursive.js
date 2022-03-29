@@ -1,6 +1,6 @@
 /**
  * Write a function called someRecursive which accepts an array and a callback.
- * THe function returns true is a single value in the array returns true when 
+ * The function returns true if a single value in the array returns true when 
  * passed to the callback. Otherwise it returns false.
  */
 
@@ -13,5 +13,9 @@
 // someRecursive([4,6,8], val => val > 10); // false
 
 function someRecursive(arr, callback){
-
+  if(arr.length === 0) return false;
+  return callback(arr[0]) ? true : someRecursive(arr.slice(1), callback);
 }
+
+const isOdd = val => val % 2 !== 0;
+console.log(someRecursive([4,6,8,7], isOdd));
