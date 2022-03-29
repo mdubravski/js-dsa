@@ -1,15 +1,16 @@
-function collectOdds(nums){
+function collectOdds(arr){
   let result = [];
 
-  function helper(arr){
+  function helper(nums){
     // base case
-    if(arr.length === 0) return;
+    if(nums.length === 0) return;
     // diff input
-    if(arr[0] % 2 !== 0) result.push(arr[0]);
-    helper(arr.slice(1));
+    if(nums[0] % 2 !== 0){
+      result.push(nums[0]);
+    }
+    helper(nums.slice(1));
   }
-
-  helper(nums);
+  helper(arr);
   return result;
 }
 
